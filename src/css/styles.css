@@ -197,3 +197,34 @@ body {
   background-color: #0f0f0f;
   color: #fffafa;
 }
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #4e75ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.page-button.active {
+  background-color: #242424;
+}
+
+.page-button:hover {
+  background-color: #242424;
+}
+
+.pagination-container span {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  color: #4e75ff;
+}
