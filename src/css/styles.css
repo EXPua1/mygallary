@@ -7,6 +7,7 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
+@import url('loader.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +23,177 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search form {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search input:hover {
+  color: blue;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  width: 150px;
+  padding: 10px 40px 10px 10px; /* Add right padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+  height: 5px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px; /* Position the icon inside the input field */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the size of the icon */
+  height: 20px; /* Adjust the size of the icon */
+  pointer-events: none; /* Prevent the icon from capturing mouse events */
+}
+
+.search button {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: rgba(255, 255, 0, 0.719);
+  border-radius: 8px;
+  padding: 8px 16px;
+  border-color: transparent;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gallery a {
+  flex: 0 0 calc((100% - 48px) / 3); /* Рассчитываем ширину элемента, учитывая отступы между ними */
+  max-width: 360px; /* Ограничиваем максимальную ширину элемента */
+  margin-bottom: 24px;
+}
+
+.gallery img {
+  width: 360px;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease; /* Плавный переход для тени */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Плавный переход для трансформации */
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-info {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-info ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.btn_fetch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_fetch button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border-color: transparent;
+  height: auto;
+}
+
+.color_accent_logo {
+  color: yellow;
+  font-size: 20px;
+}
+
+.logo_nav {
+  font-size: 20px;
+}
+
+body {
+  background-color: ;
+}
+
+.main_nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header_container {
+  border-bottom: 0.2px solid #242424;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+body {
+  background-color: #0f0f0f;
+  color: #fffafa;
 }
